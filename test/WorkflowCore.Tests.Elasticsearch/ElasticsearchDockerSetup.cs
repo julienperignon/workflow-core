@@ -14,6 +14,7 @@ namespace WorkflowCore.Tests.Elasticsearch
         
         public override string ImageName => @"elasticsearch";
         public override string ImageTag => "7.5.1";
+        public override TimeSpan TimeOut => TimeSpan.FromSeconds(60);
         public override int InternalPort => 9200;
 
         public override IList<string> EnvironmentVariables => new List<string> {
